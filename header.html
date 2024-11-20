@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    
+    html {
+      scroll-behavior: smooth;
+    }
+
+    
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    
+  </style>
+</head>
+<body>
+  <header id="header"> 
+    <div class="logo">
+      <img src="booklogo.png" alt="Library Logo">
+      <h1>LIBRARY</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="#services"><i class="fas fa-concierge-bell"></i> Services</a></li>
+        <li><a href="#contact-us"><i class="fas fa-phone"></i> Contact</a></li>
+      </ul>
+    </nav>
+</header>
+
+  <section id="home" class="hero fade-in"> 
+    <div class="hero-content">
+      <h1>Welcome to Your Library</h1>
+      <p>Discover, Explore, and Expand Your Knowledge</p>
+    </div>
+  </section>
+
+  <section id="date-time-section" class="fade-in">
+    <div class="date-time-container">
+      <span id="current-date"></span>
+      <span id="current-time"></span>
+    </div>
+</section>
+
+  <section id="about" class="fade-in">
+    <div class="about-container">
+      <h2>About Our Library</h2>
+      <p>Welcome to our library! We are dedicated to providing a wide range of resources and services to support the educational and informational needs of our community. Our collection includes books, e-resources, and multimedia materials, all designed to foster a love of reading and learning.</p>
+      <p>Our mission is to promote literacy, lifelong learning, and community engagement through accessible and inclusive library services.</p>
+    </div>
+  </section>
+  
+  <section id="services" class="fade-in">
+    <div class="services-container">
+      <h2>Our Services</h2>
+      <div class="service">
+        <img src="bookborrow.png" alt="Book Borrowing" />
+        <h3>Book Borrowing</h3>
+        <p>Borrow books using our bar code scanning system, making the checkout process quick and efficient.</p>
+      </div>
+      <div class="service">
+        <img src="mobiletracking.png" alt="Mobile App Tracking" />
+        <h3>Mobile App Tracking</h3>
+        <p>After borrowing, track your book's borrowing date, time, and return date directly in our mobile app.</p>
+      </div>
+      <div class="service">
+        <img src="return.png" alt="Return Reminders" />
+        <h3>Return Reminders</h3>
+        <p>Receive automatic reminders in the app for when your borrowed books are due for return.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="borrowing-policies" class="fade-in">
+    <h2>Library Borrowing Policies</h2>
+    <p>Welcome to our library! Please review our borrowing policies to ensure a smooth experience.</p>
+
+    <div class="policy-item">
+        <h3><strong>1. Eligibility</strong></h3>
+        <p>All students registered at the school are eligible to borrow books.</p>
+    </div>
+
+    <div class="policy-item">
+        <h3><strong>2. Borrowing Duration</strong></h3>
+        <p>Items can be borrowed for a duration of 1 week.</p>
+    </div>
+
+    <div class="policy-item">
+        <h3><strong>3. Late Returns</strong></h3>
+        <p>Late returns will incur a fine of ₱30 per book.</p>
+    </div>
+
+    <div class="policy-item">
+        <h3><strong>4. Lost or Damaged Items</strong></h3>
+        <p>Students are responsible for items borrowed. Lost or damaged items must be reported immediately and may incur replacement costs.</p>
+    </div>
+
+    <div class="policy-item">
+        <h3><strong>5. Renewals</strong></h3>
+        <p>Books can be renewed in person.</p>
+    </div>
+</section>
+
+
+
+  <section id="featured-collection" class="fade-in">
+    <div class="featured-container">
+      <h2>Featured Collection</h2>
+      <div class="carousel">
+        <div class="book-item">
+          <img src="book1.jpg" alt="Book 1">
+          <h3>ChatGPT REVEALED</h3>
+          <p>Ryan Emerson</p>
+        </div>
+        <div class="book-item">
+          <img src="book2.jpg" alt="Book 2">
+          <h3>TECH FLUENT</h3>
+          <p>Aman Y. Agarwal</p>
+        </div>
+        <div class="book-item">
+          <img src="book3.jpg" alt="Book 3">
+          <h3>DATA AT THE ENTERPRISE LEVEL THE NEXT CONVERGENCE</h3>
+          <p>Bryant Avey</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="fade-in">
+    <div class="testimonials-container">
+      <h2>What Our Visitors Say</h2>
+      <div class="testimonial">
+        <p class="quote">"Borrowing books is now a breeze! The barcode system makes the process super quick and easy."</p>
+        <p class="author">- Alex R.</p>
+      </div>
+      <div class="testimonial">
+        <p class="quote">"I love tracking my borrowed books in the mobile app. I always know when I need to return them."</p>
+        <p class="author">- Jamie S.</p>
+      </div>
+      <div class="testimonial">
+        <p class="quote">"The return reminders are such a helpful feature. They keep me from missing any return dates."</p>
+        <p class="author">- Casey L.</p>
+      </div>
+      <div class="testimonial">
+        <p class="quote">"Having all my borrowing info in one place on the app is amazing. So convenient!"</p>
+        <p class="author">- Jordan M.</p>
+      </div>
+    </div>
+</section>
+
+
+  <section id="app-link" class="app-section fade-in"> 
+    <div class="app-content">
+        <h2>Download Our Mobile App</h2>
+        <p>Access your library on the go! Borrow books, check your account, and stay updated with our mobile app.</p>
+        <div class="app-buttons">
+            <a href="https://play.google.com/store/search?q=mobile+legends&c=apps" class="app-button android" target="_blank">
+                DOWNLOAD NOW &nbsp;&nbsp;<i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+ 
+ <button id="back-to-top" onclick="scrollToTop()">
+  &#8679; 
+ </button>
+
+  <footer>
+    <div class="footer-container">
+      <div class="quick-links">
+        <h3><i class="fas fa-link"></i> Quick Links</h3>
+        <ul>
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="#services"><i class="fas fa-concierge-bell"></i> Services</a></li>
+        <li><a href="#contact-us"><i class="fas fa-phone"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+        <a href="https://www.facebook.com/glycerasiado?mibextid=ZbWKwL" target="_blank">Glycer Carlo Asiado</a>
+        <a href="https://www.facebook.com/profile.php?id=100008698307577&mibextid=ZbWKwL" target="_blank">Jay Joven</a>
+        <a href="https://www.facebook.com/cyrusjake.quilala/" target="_blank">Cyrus Jake Quilala</a>
+        <a href="https://www.facebook.com/profile.php?id=100091567043527&mibextid=ZbWKwL" target="_blank">Adrian Luis San Agustin</a>
+        <a href="https://www.facebook.com/neiljoshuadacanaytambot?mibextid=ZbWKwL" target="_blank">Neil Joshua Tambot</a>
+      </div>
+      <div class="contact-info" id="contact-us">
+        <h3><i class="fas fa-phone"></i> Contact Us</h3>
+        <p>Email: Library@gmail.com</p>
+        <p>Cell Phone: 09056601450</p>
+        <p>Address: Block 17 Lot 124 Phase 1D Kasiglahan Village, San Jose, Rodriguez, Rizal</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Library. All rights reserved.</p>
+    </div>
+   </footer>
+
+   <script>
+    
+    const homeLink = document.querySelector('a[href="#home"]');
+    homeLink.addEventListener('click', (event) => {
+      event.preventDefault(); 
+    });
+  
+    
+    const fadeInElements = document.querySelectorAll('.fade-in');
+  
+    const handleScroll = () => {
+      fadeInElements.forEach(element => {
+        const { top } = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+  
+        if (top < windowHeight - 50) {
+          element.classList.add('visible');
+        } else {
+          element.classList.remove('visible'); 
+        }
+      });
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('load', handleScroll); 
+  
+    
+    function updateDateTime() {
+      const date = new Date();
+  
+      
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      document.getElementById('current-date').textContent = date.toLocaleDateString('en-US', options);
+  
+     
+      document.getElementById('current-time').textContent = date.toLocaleTimeString('en-US');
+    }
+  
+    
+    setInterval(updateDateTime, 1000);
+    updateDateTime(); 
+
+    
+   window.addEventListener('scroll', () => {
+   const backToTopButton = document.getElementById('back-to-top');
+   if (window.scrollY > 300) { 
+    backToTopButton.classList.add('visible');
+   } else {
+    backToTopButton.classList.remove('visible');
+  }
+});
+
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+  </script>
+</body>
+</html>
